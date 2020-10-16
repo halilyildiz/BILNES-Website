@@ -1,0 +1,370 @@
+ /*
+*
+* ==========================================
+* UNİVERSAL CLASSES
+* ==========================================
+*
+*/
+h1{
+    font-family: 'Segoe UI';
+    font-size: 32pt;
+    font-style: bold;
+
+}
+h2{
+    font-family: 'Segoe UI';
+    font-size: 28pt;
+    font-style: bold;
+}
+h3{
+    font-family: 'Segoe UI';
+    font-size: 24pt;
+    font-style: semibold;
+}
+h4{
+    font-family: 'Segoe UI';
+    font-size: 16pt;
+    font-style: semibold;
+}
+h5{
+    font-family: 'Segoe UI';
+    font-size: 14pt;
+    font-style: semibold;
+}
+p{
+    font-family: 'Segoe UI';
+    font-size: 14pt;
+    font-style: regular;
+}
+
+.sub-paragraph{
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+    font-style: regular;
+}
+
+
+.btn {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+}
+/*
+*
+* ==========================================
+* NAVBAR
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: rgb(49, 36, 36);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: rgb(71, 29, 139);
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: rgb(66, 45, 45);
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: rgb(71, 29, 139);    
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+/*
+* 
+* -------------------------------------------------------------------------------------------------------------------------------------------
+* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*                                                                  HOME PAGE
+* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* -------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/*
+*
+* ==========================================
+* LANDİNG PAGE 
+* ==========================================
+*
+*/
+
+#landingPage{
+    margin-top: 85px;
+    
+}
+
+#landingPage .alt {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    z-index: 1;
+    
+}
+#landingPage .ust {   
+  position: absolute;
+  z-index: 2;
+  margin-left: 250px; 
+}
+@media screen and (max-width: 1200px) {
+    #landingPage .ust {    
+        margin-left: 110px; 
+      }
+}
+@media screen and (max-width: 992px) {
+    #landingPage{
+        margin-top: 122px;
+    }
+    #landingPage .ust {   
+        
+        display: none;
+      }
+    
+    #landingPage .alt{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        
+    
+    }
+}
+@media screen and (min-width: 991px) {
+    #landingPage .btn {   
+        
+        display: none;
+      }
+    }
+    
+    
+} 
+
+/*
+*
+* ==========================================
+* TARGET SECTİON
+* ==========================================
+*
+*/
+
+#targetSection{
+
+    
+
+}
+
+.target{
+    background-image: url('../images/goal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 225px;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+}
+
+/*
+*
+* ==========================================
+* QUOTE SECTİON
+* ==========================================
+*
+*/
+
+#quoteSection{
+    background: url('../images/nasa-Q1p7bh3SHj8-unsplash@2x.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    color: #fff;
+    
+
+}
+
+#quoteSection .overlay {
+    background-color: rgb(0, 0, 0, .1);
+}
+
+#quoteSection .row{ 
+    height: 250px;  
+}
+
+
+/*
+*
+* ==========================================
+* DEPARTMENTS SECTİON
+* ==========================================
+*
+*/
+
+#departmantsSection{
+
+}
+
+/*
+*
+* ==========================================
+* SPONSORS SECTİON
+* ==========================================
+*
+*/
+
+#sponsorsSection{
+
+}
+
+/*
+*
+* ==========================================
+* JOIN US SECTİON
+* ==========================================
+*
+*/
+
+#joinusSection{
+
+}
+
+/*
+*
+* ==========================================
+* FOOTER SECTİON
+* ==========================================
+*
+*/
+
+#footerSection{
+    background-color: lightskyblue;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/*
+*
+* ==========================================
+* SUBFOOTER SECTİON
+* ==========================================
+*
+*/
+
+#subFooter{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    background-color: red;
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+
+}
+
+/*
+* 
+* -------------------------------------------------------------------------------------------------------------------------------------------
+* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*                                                                  EVENTS PAGE
+* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* -------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+*
+* ==========================================
+* UPCOMİNG EVENTS
+* ==========================================
+*
+*/
+
+#upcomingEvents{
+    margin-top: 122px;
+}
+#upcomingEvents .sag{
+   float: right;
+}
+
+#upcomingEvents .row{
+    
+    border-bottom: solid 1px gray;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+/*
+*
+* ==========================================
+* REALİZED EVENTS
+* ==========================================
+*
+*/
+
+#realizedEvents{
+
+}
+
+#realizedEvents .event{
+    height: 500px;
+   
+    border-style: solid;
+
+}
+#realizedEvents .event-image{
+    
+    
+}
+#teamSection .card{
+    border: none;
+}
+
+.imageContainer{
+    
+}
